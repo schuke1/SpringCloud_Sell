@@ -10,6 +10,7 @@ import com.spirngcloud.sell.product.service.ProductService;
 import com.spirngcloud.sell.product.utils.ResultVOUtil;
 import com.springcloud.sell.product.common.DecreaseStockInput;
 import com.springcloud.sell.product.common.ProductInfoOutput;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -32,6 +33,7 @@ public class ProductController {
 
     @Autowired
     private CategoryService categoryService;
+
 
     /**
      * 1. 查询所有在架的商品

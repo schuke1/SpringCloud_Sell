@@ -6,7 +6,7 @@ spring:
       discovery:
         enabled: true
         service-id: CONFIG
-      profile: test
+      profile: dev
     stream:
       bindings:
         myMessage:
@@ -22,10 +22,12 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka/
   instance:
     prefer-ip-address: true
 
 logging:
   level:
     org.springframework.cloud.openfeign: debug
+server:
+  port: 8081

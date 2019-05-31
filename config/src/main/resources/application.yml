@@ -2,7 +2,18 @@
 spring:
   application:
     name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/schuke1/SpringCloud-config-repo
+          username: 284569882@qq.com
+          password: a123456a.!
 eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka/
+management:
+  endpoints:
+    web:
+     expose: "*"
