@@ -31,16 +31,3 @@ logging:
     org.springframework.cloud.openfeign: debug
 server:
   port: 8081
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 2000
-    getProductInfoList:
-          execution:
-            isolation:
-              thread:
-                timeoutInMilliseconds: 2000

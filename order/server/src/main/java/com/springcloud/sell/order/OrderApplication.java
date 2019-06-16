@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
 @EnableFeignClients(basePackages = "com.springcloud.sell.product.client")
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 @SpringCloudApplication
 public class OrderApplication {
 
